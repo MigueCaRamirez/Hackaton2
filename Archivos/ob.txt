@@ -1,0 +1,19 @@
+crear cultivos y gestionarlo 
+
+interfaz de usuario{
+
+    implemente un calendario interactivo
+    seccion de compras de cultivo y su estdo de envio
+    planificador de cultivos 
+    eventos en el calendario
+    detalles de evento
+    gestionar cultivos
+    cambio dinamico entre las pestañas
+    poder visualizar la informacion simplificada en un punto
+    eliminar,editar,agregar eventos en el calendario
+    localstore
+    se evalua diseño e interactividad
+    se evaluara codigo estructurado
+    joa que quede bonita la cosa
+
+}

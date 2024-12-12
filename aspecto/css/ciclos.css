@@ -1,0 +1,99 @@
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #1d3557;
+            color: #f1faee;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333333a1;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        header h1 a {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+        .carousel {
+            position: relative;
+            width: 80%;
+            max-width: 800px; /* Ancho máximo para adaptabilidad */
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para diseño atractivo */
+          }
+          
+          .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+          }
+          
+          .carousel-slides img {
+            width: 100%;
+            flex-shrink: 0;
+            object-fit: cover; /* Ajusta las imágenes */
+            height: 400px; /* Altura consistente */
+          }
+          
+          .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+          }
+          
+          .carousel-control.prev {
+            left: 10px;
+          }
+          
+          .carousel-control.next {
+            right: 10px;
+          }
+          
+          .carousel-control:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+          

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestros de la siembra</title>
+    <link rel="stylesheet" href="aspecto/css/styles-refe.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">Maestros de la siembra</a>
+        </h1>
+        
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Acercade.html">Acerca de nosotros</a>
+        <a href="ciclos.html">Ciclos a tener en cuenta</a>
+        <a href="Calendario.html">Calendario</a>
+    </nav>
+
+    <div id="background-container" class="img" style="color: white; padding: 4rem 2rem;">
+        <!-- Capa oscura -->
+        <div class="overlay"></div>
+
+    <section class="hero" >
+        <h2>Innovación para el Futuro de la Agricultura</h2>
+        <p>Explora cómo las tecnologías digitales están revolucionando el agro para hacerlo más sostenible, eficiente y rentable.</p>
+        <img src="" alt="">
+    </section>
+
+    <section id="referencias" class="section">
+        
+        <div class="cards">
+            <div class="card">
+                <img src="aspecto/img/juan.png" alt="Agricultor 1">
+                <h3>Juan Pérez</h3>
+                <p>Juan ha implementado soluciones IoT para monitorear sus cultivos y mejorar la productividad de su granja en la región sur.</p>
+            </div>
+            <div class="card">
+                <img src="aspecto/img/maria.png" alt="Agricultor 2">
+                <h3>María García</h3>
+                <p>María utiliza drones para el monitoreo de sus campos, lo que le ha permitido optimizar el uso de fertilizantes y agua en su plantación.</p>
+            </div>
+            <div class="card">
+                <img src="aspecto/img/carlos.png" alt="Agricultor 3">
+                <h3>Carlos Martínez</h3>
+                <p>Carlos es pionero en el uso de Big Data para la toma de decisiones agrícolas, lo que ha aumentado su productividad significativamente.</p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section id="contacto" class="section" style="background: #f1faee;">
+        <h2>¿Quieres ser uno de nosotros?</h2>
+        <p>Si eres agricultor y deseas unirte a nuestra red de innovación agrícola, llena el formulario a continuación.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+
+
+
+
+
+    
+    <footer>
+        <p>&copy; 2024 Transformación Digital en el Agro. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script>
+        // Array con las URLs de las imágenes que quieres usar como fondo
+        const images = [
+            'aspecto/img/maiz.jpg', // Cambia por la ruta de tu siguiente imagen
+            'aspecto/img/campos.png',
+            'aspecto/img/maiz2.jpg', // Otra imagen
+            'aspecto/img/maria.png',
+            // Agrega más imágenes si lo deseas
+        ];
+
+        // Contenedor donde se va a cambiar la imagen
+        const backgroundContainer = document.getElementById('background-container');
+
+        // Contador para saber qué imagen mostrar
+        let currentImageIndex = 0;
+
+        // Función para cambiar la imagen
+        function changeBackgroundImage() {
+            // Cambiar el fondo al siguiente índice
+            backgroundContainer.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+            // Incrementar el índice para la siguiente imagen
+            currentImageIndex++;
+
+            // Si hemos llegado al final del array de imágenes, volver al principio
+            if (currentImageIndex >= images.length) {
+                currentImageIndex = 0;
+            }
+        }
+
+        // Cambiar la imagen cada 5 segundos (5000 ms)
+        setInterval(changeBackgroundImage, 5000);
+    </script>
+    
+</body>
+</html>

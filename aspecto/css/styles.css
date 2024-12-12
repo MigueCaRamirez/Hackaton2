@@ -1,0 +1,273 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8dadc, #457b9d);
+    color: #2a2a2a;
+    line-height: 1.6;
+}
+
+/* Estilo para el header */
+header {
+    background: rgba(29, 53, 87, 0.8); /* Fondo semitransparente */
+    color: #f1faee;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #457b9d;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 1.5rem;
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFCC00; /* Color de hover */
+    text-decoration: underline;
+}
+
+/* Sección hero */
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: url('https://source.unsplash.com/1600x900/?agriculture,technology') no-repeat center center/cover;
+    background-size: cover;
+    position: relative;
+    color: white;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Sombra interna para resaltar el texto */
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Estilos para secciones */
+.section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos para los títulos de las secciones */
+.section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #457b9d;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Estilos para las tarjetas */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #4CAF50;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    color: #4CAF50;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.card p {
+    color: #555;
+    padding: 0 1.2rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilos para el footer */
+footer {
+    background: #000000;
+    color: #f1faee;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #beac45;
+    transform: translateY(-5px);
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFCC00;
+    text-decoration: underline;
+}
+
+/* Estilos para las imágenes de fondo */
+.img {
+    transition: background-image 1s ease-in-out;
+}
+
+/* Estilo para la sección de fondo */
+#background-container {
+    position: relative;
+    background-image: url('aspecto/img/campos.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero, .section {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para el efecto de transición del fondo */
+#background-container {
+    position: relative;
+    background-image: url('aspecto/img/campos.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 2rem;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+
+

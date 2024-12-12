@@ -1,0 +1,406 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8dadc, #457b9d);
+    color: #2a2a2a;
+    line-height: 1.6;
+}
+
+/* Estilo para el header */
+header {
+    background: rgba(29, 53, 87, 0.8); /* Fondo semitransparente */
+    color: #f1faee;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #457b9d;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 1.5rem;
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFCC00; /* Color de hover */
+    text-decoration: underline;
+}
+
+/* Estilo para el menú de navegación */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #457b9d;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 1.5rem;
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFCC00; /* Color de hover */
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Sección de gestión de cultivos */
+#gestionar-cultivos {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b0c4b1;
+    margin-bottom: 20px;
+}
+
+#gestionar-cultivos h2 {
+    color: #4f9b46;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#form-cultivos label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #5a6e5d;
+}
+
+#form-cultivos input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #a8c28c;
+    border-radius: 5px;
+    background: #f4f9f4;
+    font-size: 16px;
+}
+
+#form-cultivos button {
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-cultivos button:hover {
+    background: #388e3c;
+}
+
+#tabla-cultivos {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tabla-cultivos th, #tabla-cultivos td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #3e4e3d;
+}
+
+#tabla-cultivos th {
+    background-color: #4caf50;
+    color: white;
+}
+
+#tabla-cultivos td {
+    background-color: #f9f9f9;
+}
+
+#tabla-cultivos td button {
+    background: #d32f2f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tabla-cultivos td button:hover {
+    background: #b71c1c;
+}
+
+.cosecha {
+    background-color: orange;
+    color: white;
+}
+
+/* Sección de calendario */
+#calendario {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b0c4b1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#calendario h2 {
+    color: #4f9b46;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#navegacion-calendario button {
+    background: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#navegacion-calendario span {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+#tabla-calendario {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#tabla-calendario th, #tabla-calendario td {
+    width: 14.28%;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    color: #3e4e3d;
+}
+
+#tabla-calendario td.evento {
+    background: #81c784;
+    color: white;
+    font-weight: bold;
+}
+
+#tabla-calendario td:hover {
+    background: #c8e6c9;
+    cursor: pointer;
+}
+
+/* Estilos para la exportación */
+#formulario-exportacion {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-exportacion {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#label-cultivos,
+#label-fecha-inicio,
+#label-fecha-fin {
+    font-weight: bold;
+    color: #34495e;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+#cultivosSeleccionados {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    height: 150px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+#fechaInicio,
+#fechaFin {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+#fechaInicio:focus,
+#fechaFin:focus,
+#cultivosSeleccionados:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #fff;
+}
+
+#btn-exportar-csv,
+#btn-exportar-pdf {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#btn-exportar-csv:hover,
+#btn-exportar-pdf:hover {
+    background-color: #2980b9;
+}
+
+.alerta {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#resumen-areas {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resumen-areas h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+#graficoResumen {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#resumen-areas p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+#resumen-areas span {
+    font-weight: bold;
+    color: #2d7f00; /* Verde para resaltar las áreas */
+}
+
+#resumen-areas .sembrada {
+    color: #16a085;
+}
+
+#resumen-areas .por-sembrar {
+    color: #e67e22;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gestionar-cultivos, #calendario, #tabla-cultivos {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #formulario-exportacion {
+        width: 90%;
+    }
+
+    #btn-exportar-csv,
+    #btn-exportar-pdf {
+        width: 100%;
+    }
+
+    #cultivosSeleccionados,
+    #fechaInicio,
+    #fechaFin {
+        width: 100%;
+    }
+}
+
+
+/* Estilos para el footer */
+footer {
+    background: #000000;
+    color: #f1faee;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
